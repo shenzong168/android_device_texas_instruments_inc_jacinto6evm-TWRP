@@ -1,0 +1,20 @@
+# mount point       fstype    device                                                                flags
+/system             ext4      /dev/block/mmcblk0p9                                                  flags=display="System";backup=1;
+/system_image       emmc      /dev/block/mmcblk0p9                                                  flags=display="System image";backup=1;flashimg=1;
+/cache              ext4      /dev/block/mmcblk0p10                                                 flags=display="Cache";
+/data               ext4      /dev/block/mmcblk0p13                                                 flags=display="Data";
+/baidu_media        ext4      /dev/block/mmcblk0p14                                                 flags=display="Baidu_media";
+/baidu_vrdata       ext4      /dev/block/mmcblk0p15                                                 flags=display="Baidu_vrdata";
+/fota               ext4      /dev/block/mmcblk0p16                                                 flags=display="Fota";
+/baidu_map          ext4      /dev/block/mmcblk0p17                                                 flags=display="Baidu_map";
+/xloader            emmc      /dev/block/mmcblk0p1                                                  flags=display="Xloader";
+/bootloader         emmc      /dev/block/mmcblk0p2                                                  flags=display="Bootloader";
+/environment        emmc      /dev/block/mmcblk0p3                                                  flags=display="Environment";
+/recovery           emmc      /dev/block/mmcblk0p7                                                  flags=display="Recovery";backup=1;flashimg=1;
+/boot               emmc      /dev/block/mmcblk0p8                                                  flags=display="Boot";backup=1;flashimg=1;
+/XLOADER            mtd       XLOADER                                                               flags=display="Xloader";logical;
+/BOOTLOADER         mtd       BOOTLOADER                                                            flags=display="Bootloader";logical;
+/misc               mtd       MISC                                                                  flags=display="Misc";backup=1;flashimg=1;logical;
+/sdcard1            vfat      /devices/44000000.ocp/4809c000.mmc/mmc_host/                          flags=display="Sdcard1";
+/usb0               vfat      /devices/44000000.ocp/48880000.omap_dwc3_1/48890000.usb/xhci-hcd.0.auto/usb1/1-1/1-1.1flags=display="Usb0";
+/usb1               vfat      /devices/44000000.ocp/48880000.omap_dwc3_1/48890000.usb/xhci-hcd.0.auto/usb1/1-1/1-1.2flags=display="Usb1";
